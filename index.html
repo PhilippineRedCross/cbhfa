@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Philippine Red Cross</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="css/leaflet.css" rel="stylesheet"> -->
+    <link href="css/nv.d3.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div>
+          <a class="navbar-brand navbar-logo" href="#" target="_blank"><img class="prc-logo" src="img/PRC-logo_whiteBorder.png"></a>
+          <a class="navbar-brand" href="http://www.redcross.org.ph/">Philippine Red Cross</a>
+          <a class="navbar-brand" href="#"><small>Community Health Survey</small></a>
+        </div>
+      </div>
+    </div> 
+
+
+    <div class="container">
+      <div class="jumbotron" style="margin-top:10px;">
+        <h2>Training Health Baseline Survey for CBHFA Programs<br><small>Haiyan (Yolanda) Recovery</small></h2>
+
+        <p style="text-align:justify;">Philippine Red Cross' vision is to be the foremost humanitarian organization in the country. Its mission is to bring timely, effective and compassionate humanitarian assistance to the most vulnerable without consideration of nationality, race, creed, gender, social status or political belief.</p>
+        <p>This data was collected as part of a training exercise during a Community Based Health and First Aid (CBHFA) facilitator workshop and is for demonstration purposes only. Analysis is only for selected questions.</p> 
+        <p>Data collected using <a href="https://formhub.org/" target="_blank">formhub</a> and <a href="http://opendatakit.org/" target="_blank">ODK Collect</a>.</p>
+      </div><hr>
+      
+      <div id="infoWrapper">
+
+      </div>
+      <div>
+        <table border=0 cellpadding=0 cellspacing=0 width=246 style='border-collapse:
+         collapse;table-layout:fixed;width:246pt'>
+         <col width=101 style='mso-width-source:userset;mso-width-alt:4309;width:101pt'>
+         <col width=65 style='width:65pt'>
+         <col width=80 style='mso-width-source:userset;mso-width-alt:3413;width:80pt'>
+         <tr height=30 style='height:30.0pt'>
+          <td height=30 class=xl65 width=101 style='height:30.0pt;width:101pt'>Identified Health Issue</td>
+          <td class=xl65 width=65 style='width:65pt'>Response Count</td>
+          <td class=xl65 width=80 style='width:80pt'>% of Respondents</td>
+         </tr>
+         <tr height=15 style='height:15.0pt'>
+          <td height=15 class=xl66 style='height:15.0pt'>Cough &amp; colds</td>
+          <td class=xl67>53</td>
+          <td class=xl68>95</td>
+         </tr>
+         <tr height=15 style='height:15.0pt'>
+          <td height=15 class=xl66 style='height:15.0pt;border-top:none'>Fever</td>
+          <td class=xl67 style='border-top:none'>28</td>
+          <td class=xl68 style='border-top:none'>50</td>
+         </tr>
+         <tr height=15 style='height:15.0pt'>
+          <td height=15 class=xl66 style='height:15.0pt;border-top:none'>Dengue</td>
+          <td class=xl67 style='border-top:none'>22</td>
+          <td class=xl68 style='border-top:none'>39</td>
+         </tr>
+         <tr height=15 style='height:15.0pt'>
+          <td height=15 class=xl66 style='height:15.0pt;border-top:none'>Malnutrution</td>
+          <td class=xl67 style='border-top:none'>15</td>
+          <td class=xl68 style='border-top:none'>27</td>
+         </tr>
+         <tr height=15 style='height:15.0pt'>
+          <td height=15 class=xl66 style='height:15.0pt;border-top:none'>Diarrhea</td>
+          <td class=xl67 style='border-top:none'>14</td>
+          <td class=xl68 style='border-top:none'>25</td>
+         </tr>
+         <tr height=15 style='height:15.0pt'>
+          <td height=15 class=xl66 style='height:15.0pt;border-top:none'>Hypertension</td>
+          <td class=xl67 style='border-top:none'>13</td>
+          <td class=xl68 style='border-top:none'>23</td>
+         </tr>
+         <tr height=15 style='height:15.0pt'>
+          <td height=15 class=xl66 style='height:15.0pt;border-top:none'>TB</td>
+          <td class=xl67 style='border-top:none'>13</td>
+          <td class=xl68 style='border-top:none'>23</td>
+         </tr>
+         <tr height=15 style='height:15.0pt'>
+          <td height=15 class=xl66 style='height:15.0pt;border-top:none'>Dirty
+          environment</td>
+          <td class=xl67 style='border-top:none'>13</td>
+          <td class=xl68 style='border-top:none'>23</td>
+         </tr>
+         <tr height=15 style='height:15.0pt'>
+          <td height=15 class=xl66 style='height:15.0pt;border-top:none'>Diabetes</td>
+          <td class=xl67 style='border-top:none'>6</td>
+          <td class=xl68 style='border-top:none'>11</td>
+         </tr>
+         <tr height=15 style='height:15.0pt'>
+          <td height=15 class=xl66 style='height:15.0pt;border-top:none'>Rabies</td>
+          <td class=xl67 style='border-top:none'>4</td>
+          <td class=xl68 style='border-top:none'>7</td>
+         </tr>
+         <tr height=15 style='height:15.0pt'>
+          <td height=15 class=xl66 style='height:15.0pt;border-top:none'>Pnuemonia</td>
+          <td class=xl67 style='border-top:none'>3</td>
+          <td class=xl68 style='border-top:none'>5</td>
+         </tr>
+         <tr height=15 style='height:15.0pt'>
+          <td height=15 class=xl66 style='height:15.0pt;border-top:none'>Drug addiction</td>
+          <td class=xl67 style='border-top:none'>3</td>
+          <td class=xl68 style='border-top:none'>5</td>
+         </tr>
+         <tr height=15 style='height:15.0pt'>
+          <td height=15 class=xl66 style='height:15.0pt;border-top:none'>Stress</td>
+          <td class=xl67 style='border-top:none'>3</td>
+          <td class=xl68 style='border-top:none'>5</td>
+         </tr>
+         <tr height=15 style='height:15.0pt'>
+          <td height=15 class=xl66 style='height:15.0pt;border-top:none'>Asthma</td>
+          <td class=xl67 style='border-top:none'>2</td>
+          <td class=xl68 style='border-top:none'>4</td>
+         </tr>
+         <tr height=15 style='height:15.0pt'>
+          <td height=15 class=xl66 style='height:15.0pt;border-top:none'>Dehydration</td>
+          <td class=xl67 style='border-top:none'>2</td>
+          <td class=xl68 style='border-top:none'>4</td>
+         </tr>
+         <tr height=15 style='height:15.0pt'>
+          <td height=15 class=xl66 style='height:15.0pt;border-top:none'>Cardio-vascular
+          dise<span style='display:none'>ase</span></td>
+          <td class=xl67 style='border-top:none'>2</td>
+          <td class=xl68 style='border-top:none'>4</td>
+         </tr>
+         <tr height=15 style='height:15.0pt'>
+          <td height=15 class=xl66 style='height:15.0pt;border-top:none'>Skin infection</td>
+          <td class=xl67 style='border-top:none'>1</td>
+          <td class=xl68 style='border-top:none'>2</td>
+         </tr>
+         <tr height=15 style='height:15.0pt'>
+          <td height=15 class=xl66 style='height:15.0pt;border-top:none'>Constipation</td>
+          <td class=xl67 style='border-top:none'>1</td>
+          <td class=xl68 style='border-top:none'>2</td>
+         </tr>
+         <tr height=15 style='height:15.0pt'>
+          <td height=15 class=xl66 style='height:15.0pt;border-top:none'>Care for
+          elderly</td>
+          <td class=xl67 style='border-top:none'>1</td>
+          <td class=xl68 style='border-top:none'>2</td>
+         </tr>
+         <tr height=15 style='height:15.0pt'>
+          <td height=15 class=xl66 style='height:15.0pt;border-top:none'>Measles</td>
+          <td class=xl67 style='border-top:none'>1</td>
+          <td class=xl68 style='border-top:none'>2</td>
+         </tr>
+         <tr height=15 style='height:15.0pt'>
+          <td height=15 class=xl66 style='height:15.0pt;border-top:none'>Kidney
+          problems</td>
+          <td class=xl67 style='border-top:none'>1</td>
+          <td class=xl68 style='border-top:none'>2</td>
+         </tr>
+         <tr height=15 style='height:15.0pt'>
+          <td height=15 class=xl66 style='height:15.0pt;border-top:none'>Polio</td>
+          <td class=xl67 style='border-top:none'>1</td>
+          <td class=xl68 style='border-top:none'>2</td>
+         </tr>
+         <tr height=15 style='height:15.0pt'>
+          <td height=15 class=xl66 style='height:15.0pt;border-top:none'>Personal
+          hygiene</td>
+          <td class=xl67 style='border-top:none'>1</td>
+          <td class=xl68 style='border-top:none'>2</td>
+         </tr>
+         <tr height=15 style='height:15.0pt'>
+          <td height=15 class=xl66 style='height:15.0pt;border-top:none'>Safety (street
+          light)</td>
+          <td class=xl67 style='border-top:none'>1</td>
+          <td class=xl68 style='border-top:none'>2</td>
+         </tr>
+        </table>
+      </div>
+      <hr>
+
+
+
+    </div> 
+
+
+    <script src="js/jQuery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/d3.min.js"></script>
+   <!-- <script src="js/leaflet.js"></script>
+    <script src="js/leaflet-heat.js"></script> -->
+    <script src="js/nv.d3.min.js"></script>
+    <script src="js/surveyLookup.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
